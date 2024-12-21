@@ -1,0 +1,94 @@
+body {
+  background-color: #272b30;
+  font-family: "Comfortaa", cursive;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Nerko One",cursive;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+.back img{
+    max-height: 30vh;
+    object-fit: cover;
+}
+/***************** NavBar *******************/
+nav.navbar {
+  background-color: #3a497b;
+  border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    width: 75%;
+
+}
+.navbar .navbar-brand img {
+  max-width: 40px;
+}
+.navbar .nav-link {
+  color: #fff;
+  font-size: 12.5px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.navbar .nav-link:hover {
+  color: #0099cc;
+}
+.navbar .nav-link.active {
+  color: #0099cc;
+}
+@media screen and (max-width:576px){
+  nav.navbar {
+    width: 100%;
+  
+  }
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+/***************** Games Section *******************/
+.card{
+    cursor: pointer;
+    filter: grayscale(0.7);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-filter: grayscale(0.7);
+}
+
+.card:hover{
+    filter: grayscale(0);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -webkit-filter: grayscale(0);
+}
+
+.card-body .card-title h3{
+font-size: 14px;
+}
+.card-footer .text-bg-dark{
+font-size: 10.5px;
+padding: 3.675px 6.825px;
+background-color: #32383E !important; 
+
+}
+
+/***************** Details Section *******************/
+.game-details{
+    background-color: #272729be;
+    
+}
+    
