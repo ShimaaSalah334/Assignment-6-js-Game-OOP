@@ -27,7 +27,6 @@ links.forEach((link) => {
     links.forEach((link) => link.classList.remove("active"));
     link.classList.add("active");
     category = link.getAttribute("data-category");
-    console.log(category);
     await get();
   });
 });

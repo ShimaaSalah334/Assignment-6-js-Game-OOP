@@ -6,8 +6,6 @@ export async function get() {
 
   let games = new Games(category);
   games = await games.getGames();
-
-  console.log(games);
   displayGames(games);
 }
 get();
