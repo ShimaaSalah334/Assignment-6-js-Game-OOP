@@ -1,11 +1,10 @@
-import { Games , category } from "./games.js";
-import { GameDetails } from "./details.js";
-import { displayGames } from "./display.js";
+import { Games, category } from "./games.js";
+import { UI } from "./display.js";
 
-export async function get() {
-
-  let games = new Games(category);
-  games = await games.getGames();
-  displayGames(games);
+export async function displayData() {
+  const gamesInstance = new Games(category);
+  const games = await gamesInstance.getGames();
+  const uiInstance = new UI();
+  uiInstance.displayGames(games);
 }
-get();
+displayData();
